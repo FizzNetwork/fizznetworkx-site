@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FizzNetwork — Solo Dev. Experimental Onchain Systems.</title>
-  <meta name="description" content="FizzNetwork is the builder identity of kiz — solo dev behind Vik Tim, OUM Radio, Mushroom Monarchs, and more experimental onchain systems." />
+  <title>FizzNetwork — Solo Dev. Experimental AI &amp; Onchain Systems.</title>
+  <meta name="description" content="FizzNetwork is the builder identity of kiz — solo dev behind the Tim Fam AI stack (Vik Tim, Viki, VikTDer), OUM Radio, Mushroom Monarchs, and more experimental systems." />
   <meta property="og:title" content="FizzNetwork" />
-  <meta property="og:description" content="Solo dev. Experimental onchain systems." />
+  <meta property="og:description" content="Solo dev. Experimental AI &amp; onchain systems." />
   <meta property="og:url" content="https://fizznetwork.xyz" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:creator" content="@KizLdn" />
@@ -147,6 +147,25 @@
     }
     .stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 0.4rem; letter-spacing: 0.05em; }
 
+    /* TIM FAM */
+    .timfam-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem; margin-top: 3rem;
+    }
+    .timfam-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.5rem 1.5rem 1.75rem;
+      text-decoration: none; color: var(--text);
+      transition: border-color 0.2s, transform 0.2s;
+      display: flex; flex-direction: column; align-items: stretch;
+    }
+    .timfam-card:hover { border-color: #333; transform: translateY(-2px); }
+    .timfam-portrait {
+      width: 100%; aspect-ratio: 1; object-fit: cover;
+      border-radius: 10px; margin-bottom: 1.25rem;
+      background: var(--bg); border: 1px solid var(--border); display: block;
+    }
+
     /* PROJECTS */
     .projects-grid {
       display: grid; grid-template-columns: repeat(2, 1fr);
@@ -176,6 +195,7 @@
       text-decoration: none; letter-spacing: 0.04em;
     }
     .project-card:hover .project-link { opacity: 0.8; }
+    .timfam-card .project-link { margin-top: auto; padding-top: 1rem; }
 
     /* DISCLAIMER */
     .disclaimer {
@@ -221,6 +241,7 @@
       .hamburger { display: flex; }
       .projects-grid { grid-template-columns: 1fr; }
       .stats-grid { grid-template-columns: 1fr; }
+      .timfam-grid { grid-template-columns: 1fr; }
       .project-card.featured { grid-column: span 1; }
       nav { padding: 1rem 1.25rem; }
       section { padding: 3.5rem 1.25rem; }
@@ -234,6 +255,7 @@
   <a href="#" class="nav-logo">FIZZNETWORK</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#timfam">Tim Fam</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#connect">Connect</a></li>
   </ul>
@@ -247,9 +269,9 @@
 <section class="hero">
   <span class="hero-tag">// builder identity</span>
   <h1 class="hero-name">FizzNetwork</h1>
-  <p class="hero-sub">Solo dev. Experimental onchain systems.<br/>Built by <span>kiz</span> — one layer at a time.</p>
+  <p class="hero-sub">Solo dev. Experimental AI &amp; onchain systems.<br/>Built by <span>kiz</span> — one layer at a time.</p>
   <div class="hero-actions">
-    <a href="#projects" class="btn-primary">View Projects</a>
+    <a href="#timfam" class="btn-primary">Meet the Tim Fam</a>
     <a href="#connect" class="btn-secondary">Get in Touch</a>
   </div>
 </section>
@@ -261,7 +283,7 @@
   <p class="section-label">// 001 — about</p>
   <h2 class="section-title">One builder.<br/><span class="grad">A whole ecosystem.</span></h2>
   <p class="section-body">
-    FizzNetwork is the solo dev studio behind a growing set of experimental onchain apps, music platforms, and tools. Everything ships under one handle — kiz — and every project connects back to the same vision: indie systems that actually work.
+    FizzNetwork is the solo dev studio behind a growing set of experimental AI agents, onchain apps, music platforms, and tools. Everything ships under one handle — kiz — and every project connects back to the same vision: indie systems that actually work.
   </p>
   <div class="stats-grid">
     <div class="stat"><div class="stat-num">13+</div><div class="stat-label">Apps Shipped</div></div>
@@ -272,18 +294,49 @@
 
 <hr class="divider" />
 
+<!-- TIM FAM -->
+<section id="timfam">
+  <p class="section-label">// 002 — the tim fam</p>
+  <h2 class="section-title">A modular <span class="grad">AI stack</span>.<br/>One hub. Three siblings.</h2>
+  <p class="section-body">
+    Each ships standalone. Together they share a bus — intel flows, siblings react. Install what you need, plug in what you don't have yet.
+  </p>
+  <div class="timfam-grid">
+
+    <a href="https://viktim.xyz" target="_blank" rel="noopener" class="timfam-card">
+      <img src="/assets/tim-fam/Vik-portrait.png" alt="Vik Tim Support Desk" class="timfam-portrait" />
+      <span class="project-tag">the hub · desktop</span>
+      <div class="project-name">Vik Tim Support Desk</div>
+      <p class="project-desc">Desktop AI companion. Orchestrates the family, runs connectors, talks to models. Plugins, memory, personas — the control center.</p>
+      <span class="project-link">Download →</span>
+    </a>
+
+    <a href="https://viki.viktim.xyz" target="_blank" rel="noopener" class="timfam-card">
+      <img src="/assets/tim-fam/Viki-portrait.png" alt="Viki" class="timfam-portrait" />
+      <span class="project-tag">the social kid · desktop</span>
+      <div class="project-name">Viki</div>
+      <p class="project-desc">Content generator and multi-platform poster. Ships bare, plugs VikBit chips for every platform you care about. Pink, punchy, prolific.</p>
+      <span class="project-link">Learn more →</span>
+    </a>
+
+    <a href="https://viktder.viktim.xyz" target="_blank" rel="noopener" class="timfam-card">
+      <img src="/assets/tim-fam/VikTDer-portrait.png" alt="VikTDer" class="timfam-portrait" />
+      <span class="project-tag">the trader kid · daemon</span>
+      <div class="project-name">VikTDer</div>
+      <p class="project-desc">24/7 trading daemon. Watches the tape, reacts to Vik's signals, audits every decision. LLM-free, tight, always on.</p>
+      <span class="project-link">Learn more →</span>
+    </a>
+
+  </div>
+</section>
+
+<hr class="divider" />
+
 <!-- PROJECTS -->
 <section id="projects">
-  <p class="section-label">// 002 — projects</p>
-  <h2 class="section-title">What's <span class="grad">running</span> right now.</h2>
+  <p class="section-label">// 003 — other systems</p>
+  <h2 class="section-title">The wider <span class="grad">ecosystem</span>.</h2>
   <div class="projects-grid">
-
-    <a href="https://viktim.xyz" target="_blank" rel="noopener" class="project-card featured">
-      <span class="project-tag">Download — Desktop App</span>
-      <div class="project-name">Vik Tim</div>
-      <p class="project-desc">Desktop Electron companion. Floating FAB, slide-out panel, XP tracking across all 1UP apps, wallet identity resolution, and a 30-rank progression system. The core of the ecosystem.</p>
-      <span class="project-link">Download Vik Tim →</span>
-    </a>
 
     <a href="https://oumradio.xyz" target="_blank" rel="noopener" class="project-card featured">
       <span class="project-tag">Download — Widget + Apps</span>
@@ -292,7 +345,7 @@
       <span class="project-link">Get OUM Radio →</span>
     </a>
 
-    <a href="https://mushmons.xyz" target="_blank" rel="noopener" class="project-card">
+    <a href="https://mushmons.xyz" target="_blank" rel="noopener" class="project-card featured">
       <span class="project-tag">NFT Collection</span>
       <div class="project-name">Mushroom Monarchs</div>
       <p class="project-desc">5,000 onchain NFTs. Generative collection with trait rarity, holder perks, and full 1UP ecosystem integration. Holders get gated access passes across all apps.</p>
@@ -313,13 +366,6 @@
       <span class="project-link">Join as Artist →</span>
     </a>
 
-    <div class="project-card" style="cursor:default;opacity:0.7;">
-      <span class="project-tag">Ecosystem — Unlockable</span>
-      <div class="project-name">1UP Toolbox + More</div>
-      <p class="project-desc">Dev tools, music releases, XP dashboards, and more. These apps unlock progressively as you level up through Vik Tim. Download the desktop app to start exploring.</p>
-      <span class="project-link" style="background:none;-webkit-text-fill-color:var(--muted);">Unlock via Vik Tim</span>
-    </div>
-
   </div>
 </section>
 
@@ -339,13 +385,17 @@
 
 <!-- CONNECT -->
 <div class="social-section" id="connect">
-  <p class="section-label">// 003 — connect</p>
+  <p class="section-label">// 004 — connect</p>
   <h2 class="section-title" style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:0.5rem;">Find kiz online.</h2>
   <p style="color:var(--muted);font-size:0.95rem;">DMs open. Collabs considered.</p>
   <div class="social-links">
     <a href="https://x.com/kizldn" target="_blank" rel="noopener" class="social-link">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      @KizLdn
+      @KizLdn — personal
+    </a>
+    <a href="https://x.com/fizz_network" target="_blank" rel="noopener" class="social-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      @fizz_network — dev
     </a>
     <a href="https://www.instagram.com/fizznet.io" target="_blank" rel="noopener" class="social-link">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -365,7 +415,7 @@
 <hr class="divider" />
 
 <footer>
-  <p>© 2025 FizzNetwork — <a href="https://fizznetwork.xyz">fizznetwork.xyz</a> — Built by <a href="https://x.com/kizldn" target="_blank">@KizLdn</a></p>
+  <p>© 2026 FizzNetwork — <a href="https://fizznetwork.xyz">fizznetwork.xyz</a> — Built by <a href="https://x.com/kizldn" target="_blank">@KizLdn</a></p>
 </footer>
 
 <script>
